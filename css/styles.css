@@ -1,4 +1,4 @@
-body{
+body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -10,11 +10,11 @@ header {
 	width: 100%;
 }
 
-.main_headings h1, .featured-work-header h2 {
+#heading, .featured-work-header {
 	text-transform: uppercase;
 }
 
-.logo_div{
+.logo_wrapper {
 	justify-content: flex-start;
 	width: 75%;
 }
@@ -24,9 +24,11 @@ header {
 	padding: 3%;
 }
 
-.project a {
+.project_text {
 	text-transform: uppercase;
 	color: #2F4F4F;
+	padding-left: 40%;
+	padding-top: 3%;
 }
 
 .main_headings {
@@ -72,12 +74,8 @@ header {
 	width: 80%;
 	justify-content: flex-start;
 }
-.project a {
-	padding-left: 40%;
-	padding-top: 3%;
-}
 
-.featured-work-header h2 {
+.featured-work-header {
 	padding-left: 5%;
 }
 
@@ -88,7 +86,7 @@ header {
 	width: 100%;
 }
 
-.madeby {
+.authorship {
     width: 60%;
     padding-left: 5%;
     font-size: 20px;
@@ -116,9 +114,11 @@ header {
 		margin-left: 5%;
 		margin-right: 5%;
 	} 
+
 	.main_picture {
 		justify-content: center;
 	}
+
 	.main_image {
 		width: 98%;
 		height: 450px;
@@ -128,19 +128,21 @@ header {
 		width: 113px;
 		justify-content: flex-start;
 	}
+
 	.footer {
 		margin-top: 45px;
 	}
+
 	.social_links {
 		padding-left: 5%;
 	}
-	.project a {
+
+	.project_text {
 		padding-left: 30%;
 	}
 }
 
 @media screen and (min-width: 376px) and (max-width: 600px){
-
 	.main_headings h1 {
 		font-size: 26px;
 	}
@@ -171,7 +173,7 @@ header {
 		justify-content: center;
 	}
 
-	.featured-work-header h2 {
+	#featured-work-text {
 		font-size: 24px;
 		padding-left: 5%;
 	}
@@ -182,34 +184,33 @@ header {
 		padding-bottom: 5%;
 	}
 
-	.project a {
+	.project_text {
 		font-size: 16px;
 		padding-left: 10%;
 
 	}
+
 	.social_links {
 		padding-left: 5%;
 		font-size: 26px;
 		width: 40%;
 	}
 
-	.social_links a {
-		padding-right: 16px;
-	}
-	.madeby {
+	
+	.authorship {
 		width: 60%;
 		font-size: 16px;
 	}
 }
 
 @media screen and (max-width: 375px){
-	.main_headings h1, .main_headings p {
-		font-size: 95%;
-	}
-
 	.main_headings {
 		justify-content: flex-end;
 		width: 80%;
+	}
+
+	#heading, #job_title {
+		font-size: 95%;
 	}
 
 	.logo_div {
@@ -233,7 +234,7 @@ header {
 		justify-content: center;
 	}
 
-	.featured-work-header h2 {
+	#featured-work-text {
 		font-size: 16px;
 		padding-left: 10%;
 	}
@@ -244,7 +245,7 @@ header {
 		padding-bottom: 5%;
 	}
 
-	.project a {
+	.project_text {
 		font-size: 14px;
 
 	}
@@ -252,6 +253,7 @@ header {
 	.project_image {
 		padding-bottom: 0px;
 	}
+
 	.social_links {
 		font-size: 20px;
 	    width: 65%;
@@ -259,10 +261,11 @@ header {
 	    padding-top: 10%;
 	}
 
-	.social_links a {
+	.social_links {
 		padding-right: 16px;
 	}
-	.madeby {
+
+	.authorship {
 		width: 40%;
 		font-size: 15px;
 	}
